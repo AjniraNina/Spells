@@ -1,6 +1,6 @@
 import { Spell } from '../types/types';
 import axios from 'axios';
-import { AnyAction, Dispatch } from 'redux';
+import { AnyAction } from 'redux';
 import { ThunkDispatch } from 'redux-thunk';
 
 export const fetchSpellsRequest = (): AnyAction => ({

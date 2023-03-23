@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { fetchSpells, addFavorite } from "../redux/actions";
 import { Spell as SpellType } from "../redux/reducers";
-import { useNavigate } from "react-router-dom";
 import { ThunkDispatch } from "redux-thunk";
 import { AnyAction } from "redux";
 import "./style.css";
@@ -72,7 +71,6 @@ const Spell: React.FC<{
 
 const SpellList: React.FC = () => {
   const dispatch: ThunkDispatch<{}, {}, AnyAction> = useDispatch();
-  const navigate = useNavigate();
   const spells = useSelector((state: any) => state.spells.spells);
   const [currentPage, setCurrentPage] = useState(1);
   const [savedSpells, setSavedSpells] = useState<SpellType[]>([]);
