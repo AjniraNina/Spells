@@ -20,7 +20,7 @@
     "redux-thunk": "^2.4.2",
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4",
-    "homepage": "https://AjniraNina.github.io/Spells"
+    "homepage": "https://ajniranina.github.io/spells"
   },
   "scripts": {
     "start": "react-scripts start",
